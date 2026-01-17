@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #3840f0, #0080ff, #00aaff, #00cbef, #12e7d4);
+}
+
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 30px;
+    gap: 25px;
+}
+.delete1,.delete2,.delete3{
+    width:25px;
+    height: 25px;
+    background-color: red;
+    
+}
+#username{
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.things{
+    display: flex;
+    gap: 100px;
+}
+.deletebuttons{
+    display: flex;
+    flex-direction: column;
+    
+}
+.button1{
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-family: "Times New Roman", Times, serif;
+}
+.value1,.value2,.value3{
+    font-family: "Times New Roman", Times, serif;
+}
