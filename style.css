@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right bottom, #3840f0, #0080ff, #00aaff, #00cbef, #12e7d4);
+    background-color: rgb(30, 196, 80);
 }
 
 
@@ -19,7 +19,7 @@ body {
     align-items: center;
     width: 700px;
     height: 300px;
-    border: 5px solid black;
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 30px;
     gap: 25px;
 }
@@ -30,8 +30,8 @@ body {
     
 }
 #username{
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(129, 31, 31);
     width: 300px;
     height: 25px;
     border-radius: 10px;
@@ -53,11 +53,8 @@ body {
     flex-direction: column;
     
 }
-.button1{
-    border-radius: 10px;
-    background-color: chartreuse;
-    font-family: "Times New Roman", Times, serif;
-}
-.value1,.value2,.value3{
-    font-family: "Times New Roman", Times, serif;
+
+
+#items{
+    color: white;
 }
