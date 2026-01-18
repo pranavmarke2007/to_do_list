@@ -1,51 +1,32 @@
 let username = document.querySelector("#username")
-let value1 = document.querySelector(".value1")
-let value2 = document.querySelector(".value2")
-let value3 = document.querySelector(".value3")
-let button = document.querySelector(".button1")
-let delete1=document.querySelector(".delete1")
-let delete2=document.querySelector(".delete2")
-let delete3=document.querySelector(".delete3")
-let val1 = localStorage.getItem("val1")
-let val2 = localStorage.getItem("val2")
+let button = document.querySelector(".button")
+let items = document.querySelector("#items")
 
+let tasks = []
+for (let i = 0; i < localStorage.length; i++) {
+    tasks.push(localStorage.getItem(`val${i}`))
 
-
-value1.innerHTML = localStorage.getItem("val1")
-value2.innerHTML = localStorage.getItem("val2")
-value3.innerHTML = localStorage.getItem("val3")
-
-if (val1 === null) {
-    button.addEventListener("click", () => {
-        let name = username.value
-        localStorage.setItem("val1", name)
-        
-    })
-}
-else if (val1 !== null && val2 === null) {
-    button.addEventListener("click", () => {
-        let name = username.value
-        localStorage.setItem("val2", name)
-    })
 
 }
-else {
-    button.addEventListener("click", () => {
-        let name = username.value
-        localStorage.setItem("val3", name)
-    })
+
+for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i]) {
+        let li = document.createElement("li")
+        li.innerHTML = tasks[i]
+        items.appendChild(li)
+    }
 }
 
-delete1.addEventListener("click",()=>{
-    localStorage.removeItem('val1')
-})
-delete2.addEventListener("click",()=>{
-    localStorage.removeItem('val2')
-})
-delete3.addEventListener("click",()=>{
-    localStorage.removeItem('val3')
-})
+button.addEventListener("click", () => {
+    const value = username.value
+    let index = localStorage.length
+    localStorage.setItem(`val${index}`, value)
+    let li = document.createElement("li")
+    li.innerHTML = value
+    items.appendChild(li)
 
+    tasks.push(value)
+})
 
 
 
