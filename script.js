@@ -32,7 +32,7 @@ button.addEventListener("click", () => {
     tasks.push(value)
 
     let dbutton = document.createElement("button")
-    dbutton.innerHTML = "❌"
+    dbutton.innerHTML = "-❌-"
     dbutton.addEventListener("click", () => {
         localStorage.removeItem(`val${index}`)
         li.remove()
