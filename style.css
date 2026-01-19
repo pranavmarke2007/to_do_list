@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(30, 196, 80);
+    background-color: rgb(28, 199, 79);
 }
 
 
@@ -57,4 +57,9 @@ body {
 
 #items{
     color: white;
+   
+}
+ul li {
+    display: flex;
+    gap: 20px;
 }
