@@ -23,12 +23,7 @@ body {
     border-radius: 30px;
     gap: 25px;
 }
-.delete1,.delete2,.delete3{
-    width:25px;
-    height: 25px;
-    background-color: red;
-    
-}
+
 #username{
     background-color: rgb(255, 255, 255);
     color: rgb(129, 31, 31);
@@ -38,28 +33,11 @@ body {
     font-family: "Times New Roman", Times, serif;
 }
 
-.input{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
 
-.things{
-    display: flex;
-    gap: 100px;
-}
-.deletebuttons{
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 
 #items{
     color: white;
    
-}
-ul li {
-    display: flex;
-    gap: 20px;
 }
