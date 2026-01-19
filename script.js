@@ -15,10 +15,10 @@ for (let i = 0; i < tasks.length; i++) {
         items.appendChild(li)
         let dbutton = document.createElement("button")
         dbutton.innerHTML = "delete"
-        dbutton.addEventListener("click",()=>{
-        localStorage.removeItem(`val${i}`)
-    })
-    items.appendChild(dbutton)
+        dbutton.addEventListener("click", () => {
+            localStorage.removeItem(`val${i}`)
+        })
+        li.appendChild(dbutton)
     }
 }
 
@@ -31,12 +31,13 @@ button.addEventListener("click", () => {
     items.appendChild(li)
     tasks.push(value)
 
-    let dbutton=document.createElement("button")
-    dbutton.innerHTML="delete"
-    dbutton.addEventListener("click",()=>{
+    let dbutton = document.createElement("button")
+    dbutton.innerHTML = "delete"
+    dbutton.addEventListener("click", () => {
         localStorage.removeItem(`val${index}`)
+        li.remove()
     })
-    items.appendChild(dbutton)
+    li.appendChild(dbutton)
 
 
 })
